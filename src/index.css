@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Outfit', sans-serif;
+
+  /* Dark Navy & Electric Blue Palette */
+  --color-background: hsl(220, 50%, 8%);
+  --color-foreground: hsl(0, 0%, 100%);
+  
+  --color-card: hsl(220, 45%, 12%);
+  --color-card-foreground: hsl(0, 0%, 100%);
+  
+  --color-popover: hsl(220, 45%, 12%);
+  --color-popover-foreground: hsl(0, 0%, 100%);
+  
+  --color-primary: hsl(217, 100%, 55%);
+  --color-primary-foreground: hsl(0, 0%, 100%);
+  
+  --color-secondary: hsl(220, 40%, 18%);
+  --color-secondary-foreground: hsl(0, 0%, 100%);
+  
+  --color-muted: hsl(220, 30%, 20%);
+  --color-muted-foreground: hsl(220, 20%, 70%);
+  
+  --color-accent: hsl(217, 100%, 55%);
+  --color-accent-foreground: hsl(0, 0%, 100%);
+  
+  --color-destructive: hsl(0, 84%, 60%);
+  --color-destructive-foreground: hsl(0, 0%, 100%);
+  
+  --color-border: hsl(220, 30%, 20%);
+  --color-input: hsl(220, 30%, 20%);
+  --color-ring: hsl(217, 100%, 55%);
+
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+  --radius-sm: 0.5rem;
+}
+
+:root {
+  --background: 220 50% 8%;
+  --foreground: 0 0% 100%;
+  --card: 220 45% 12%;
+  --card-foreground: 0 0% 100%;
+  --popover: 220 45% 12%;
+  --popover-foreground: 0 0% 100%;
+  --primary: 217 100% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 40% 18%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 220 30% 20%;
+  --muted-foreground: 220 20% 70%;
+  --accent: 217 100% 55%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 30% 20%;
+  --input: 220 30% 20%;
+  --ring: 217 100% 55%;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased overflow-x-hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-white/60;
+  }
+  .text-gradient-primary {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-blue-400;
+  }
+  .glass-panel {
+    @apply bg-card/60 backdrop-blur-md border border-white/5;
+  }
+}

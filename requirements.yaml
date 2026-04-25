@@ -1,0 +1,21 @@
+packages:
+  "framer-motion": "For premium scroll animations and page transitions"
+  "react-hook-form": "For form state management in the contact page"
+  "@hookform/resolvers": "For Zod schema validation in forms"
+  "zod": "For form validation schemas"
+  "clsx": "For conditional class joining"
+  "tailwind-merge": "For merging tailwind classes safely"
+
+images:
+  - path: "artifacts/assegura-ai/public/images/hero-bg.png"
+    description: "Abstract 3D data visualization in dark navy blue and bright electric blue, glowing nodes, network connections, cyber security feel, high quality, corporate technology."
+    aspect_ratio: "16:9"
+  - path: "artifacts/assegura-ai/public/images/ai-brain.png"
+    description: "Futuristic artificial intelligence brain made of glowing blue geometric particles on a dark blue background, professional, industrial analytics concept."
+    aspect_ratio: "1:1"
+  - path: "artifacts/assegura-ai/public/images/dashboard-mockup.png"
+    description: "Abstract futuristic dashboard interface showing health and safety metrics, glowing charts, dark theme, sleek corporate design, high end."
+    aspect_ratio: "16:9"
+
+notes:
+  - This is a static marketing site without a backend API. Form submissions will mock a network request and show a success toast.
