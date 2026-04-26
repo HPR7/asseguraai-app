@@ -47,6 +47,6 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-400;
   }
   .glass-panel {
-    @apply bg-card/60 backdrop-blur-md border border-white/5;
+    @apply bg-gray-900/60 backdrop-blur-md border border-white/5;
   }
 }
