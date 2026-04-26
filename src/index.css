@@ -29,7 +29,7 @@
 
 @layer base {
   * {
-    @apply border;
+    box-sizing: border-box;
   }
   body {
     @apply bg-black text-white font-sans antialiased overflow-x-hidden;
