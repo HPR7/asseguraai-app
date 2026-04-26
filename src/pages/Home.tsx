@@ -47,9 +47,9 @@ export default function Home() {
           <img
             src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
             alt="AI Data Visualization"
-            className="w-full h-full object-cover opacity-40 mix-blend-screen"
+            className="w-full h-full object-cover opacity-30"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-blackg" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
@@ -109,7 +109,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 sm:py-20 border-y border-white/5 bg-white/[0.02]">
+      <section className="py-12 sm:py-20 bg-black/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             className="grid grid-cols-3 gap-4 sm:gap-8 text-center"
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Sectors Section */}
-      <section className="py-16 sm:py-24 lg:py-32 bg-card relative overflow-hidden">
+      <section className="py-16 sm:py-24 lg:py-32 bg-black/40 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -183,7 +183,7 @@ export default function Home() {
                 {t.home.sectorsTitle1} <br />
                 <span className="text-gradient-primary">{t.home.sectorsTitle2}</span>
               </h2>
-              <p className="text-base sm:text-lg text-muted-foreground mb-6 sm:mb-8">
+              <p className="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8">
                 {t.home.sectorsSub}
               </p>
 
