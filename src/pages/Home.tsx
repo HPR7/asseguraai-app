@@ -47,9 +47,9 @@ export default function Home() {
           <img
             src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
             alt="AI Data Visualization"
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover opacity-25"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-blackg" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/80 to-black" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-12">
@@ -124,7 +124,7 @@ export default function Home() {
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-display font-bold text-white mb-1 sm:mb-2 leading-snug">
                   {stat.title}
                 </h3>
-                <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
                   {stat.desc}
                 </p>
               </motion.div>
@@ -140,7 +140,7 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4 sm:mb-6">
               {t.home.servicesTitle1} <span className="text-primary">{t.home.servicesTitle2}</span>
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-2">
+            <p className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto px-2">
               {t.home.servicesSub}
             </p>
           </div>
